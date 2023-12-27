@@ -3,11 +3,22 @@
     src: url(../assets/font/pricedownbl.otf);
 }
 
-body {
-    background-color: black;
+html {
+    overflow-y: hidden;
+    height: 100%;
 }
 
-h1 {
+body {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+
+.titulo {
     font-family: Pricedown;
     color: white;
     font-size: 74px;
@@ -16,8 +27,13 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-stroke: 5px transparent;
     color: #ffffff;
-   
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    
 }
+
 
 .slider {
     height: 450px;
@@ -26,6 +42,7 @@ h1 {
     width: 90%;
     display: grid;
     place-items: center;
+    
     overflow: hidden;
 }
 
@@ -74,3 +91,28 @@ button {
     border: none;
 }
 
+
+.menu-jogos {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-jogos__itens {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    
+    
+    
+}
+
+.jogo-botao {
+    transition: transform .2s
+}
+
+.jogo-botao:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
