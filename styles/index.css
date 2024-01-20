@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     justify-content: center;
    
+   
 }
 
 
@@ -26,12 +27,46 @@ body {
     background: -webkit-linear-gradient(90deg, #3E23CD 0%, #E702E7 100%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 5px transparent;
-    color: #ffffff;
+    
     position: absolute;
     top: 4rem;
     right: 0;
     left: 0;
     
+}
+
+.botoes-musica {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.paragrafo {
+    font-family: Pricedown;
+    color: #9819f4;
+    font-size: 1.5rem;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    
+}
+
+.botao-musica {
+    border: 1px solid #9819f4;
+    width: 100px;
+    border-radius: 10px;
+    font-family: Pricedown;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    transition: 0.3s background-color;
+}
+
+.botao-musica:hover {
+    background-color: #9819f4;
+    color: black;
 }
 
 
@@ -98,17 +133,20 @@ button {
 }
 
 .menu-jogos__itens {
+   
+    width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
     bottom: 0;
+    gap: 8px;
     
     
     
 }
 
 .jogo-botao {
-    transition: transform .2s
+    transition: transform .2s;
 }
 
 .jogo-botao:hover {
