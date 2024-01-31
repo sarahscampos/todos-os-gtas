@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&family=Lexend+Deca:wght@600&family=Lexend+Zetta&display=swap');
+
+:root {
+    --fonte-titulo: 'Lexend Zetta', sans-serif;
+    --fonte-texto: 'Kodchasan', sans-serif;   
+    --fonte-botao: 'Lexend Deca', sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-texto);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 80px;
+    align-items: center;
+    gap: 70px;
+}
+
+.textos-container {
+    width: 40%;
+}
+
+.imagem-container {
+    width: 60%;
+}
+
+.titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 4.5rem;
+  
+}
+.texto {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+
+.trailer-btn {
+    background-color: #9819f4;
+    color: white;
+    width: 40%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--fonte-botao);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-top: 50px;
+    align-self: center;
+    transition: .3s transform;
+}
+
+.trailer-btn:hover {
+    transform: scale(1.1);
+}
+
+.voltar-btn {
+    background-color: transparent;
+    color: white;
+    width: 40%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--fonte-botao);
+    border: 2px solid #9819f4;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-top: 50px;
+    align-self: center;
+    transition: .3s transform;   
+}
+
+.voltar-btn:hover {
+    transform: scale(1.1);
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem-container {
+    width: 50%;
+    text-align: center;
+
+}
+
+.imagem-jogo {
+    width: 100%;
+    border-radius: 10px;
+}
+
